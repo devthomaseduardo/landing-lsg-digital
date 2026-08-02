@@ -1,17 +1,37 @@
-# LSG Digital — landing / institucional
+# LSG Digital — landing
 
-Site de **assessoria** de marketing digital (LSG). React + Vite + Tailwind.
+Site institucional / landing de **assessoria** de marketing digital (LSG). React + Vite + Tailwind.
 
-> Autor: [Thomas Eduardo](https://thomaseduardo.com.br)  
-> Nome sugerido: `landing-lsg-digital` (hoje: `slg-vs2`)
+Autor: [Thomas Eduardo](https://thomaseduardo.com.br) · [GitHub](https://github.com/devthomaseduardo/slg-vs2)
 
-![Preview](https://github.com/user-attachments/assets/b6b74610-46cb-48db-bcfd-9c1c9ddb4498)
+> Nome sugerido: `landing-lsg-digital`
+
+## Propósito
+
+- Apresentar serviços, clientes e resultados da LSG.
+- Converter visitante em contato (formulário / EmailJS).
+
+## Funcionalidades
+
+| Área | Descrição |
+|------|-----------|
+| **Hero / logo** | Identidade da marca |
+| **Clientes** | Logos e prova social |
+| **Serviços** | Tráfego, branding, consultoria |
+| **Resultados** | Cases e métricas narrativas |
+| **Contato** | Formulário (EmailJS) |
 
 ## Stack
 
-React · Vite · Tailwind · Framer Motion · React Router
+| Camada | Tecnologia |
+|--------|------------|
+| UI | **React** |
+| Build | **Vite** |
+| Estilo | **Tailwind CSS** |
+| Motion | **Framer Motion** |
+| Roteamento | **React Router** |
 
-## Começar
+## Instalação
 
 ```bash
 git clone https://github.com/devthomaseduardo/slg-vs2.git
@@ -20,10 +40,13 @@ npm install
 npm run dev
 ```
 
-```bash
-npm run build
-npm run preview
-```
+## Scripts
+
+| Comando | Efeito |
+|---------|--------|
+| `npm run dev` | Desenvolvimento |
+| `npm run build` | Produção |
+| `npm run preview` | Preview |
 
 ## Licença
 
