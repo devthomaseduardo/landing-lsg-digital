@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Serviços LSG Digital: CRM, chatbots, funil de vendas, landing pages, mentoria e campanhas." />
+  <meta name="description" content="Serviços LSG Digital: CRM, chatbots, funil, landing pages, mentoria e campanhas." />
   <meta name="theme-color" content="#0b0c0c" />
   <title>Serviços | LSG Digital</title>
   <link rel="icon" href="./src/img/favicon.png" />
@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./src/styles/redesign.css" />
   <link rel="stylesheet" href="./src/styles/pages.css" />
+  <link rel="stylesheet" href="./src/styles/icons.css" />
   <link rel="stylesheet" href="./src/styles/motion.css" />
 </head>
 <body>
@@ -19,10 +20,7 @@
   <div class="signal-bar"><a href="./contato.html">Fale com a LSG e monte a operação digital do seu negócio</a></div>
 
   <header class="site-header" data-header>
-    <a class="brand" href="./index.html" aria-label="LSG Digital, início">
-      <img class="brand-logo" src="./src/img/logo-escura.png" alt="" width="36" height="36" />
-      <span class="brand-main">LSG</span><span class="brand-sub">DIGITAL</span>
-    </a>
+    <a class="brand" href="./index.html" aria-label="LSG Digital, início"><span class="brand-main">LSG</span><span class="brand-sub">DIGITAL</span></a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" data-menu-button>
       <span class="menu-icon" aria-hidden="true"></span><span data-menu-label>Menu</span>
     </button>
@@ -43,14 +41,14 @@
         <div class="reveal">
           <p class="eyebrow">Soluções conectadas</p>
           <h1>Do primeiro contato até a conversão.</h1>
-          <p class="page-lead">CRM, automação, páginas e campanhas no mesmo sistema digital, para a operação trabalhar com menos atrito e mais clareza.</p>
+          <p class="page-lead">CRM, automação, páginas e campanhas no mesmo sistema digital.</p>
           <div class="hero-actions">
             <a class="primary-link" href="./precos.html">Ver preços</a>
             <a class="text-link" href="./contato.html">Pedir diagnóstico</a>
           </div>
         </div>
         <figure class="page-hero-media reveal">
-          <img src="./src/img/services/hero3.png" alt="Operação de marketing digital" width="900" height="700" loading="eager" />
+          <img src="./src/img/fundos/8.jpeg" alt="Operação digital" width="900" height="700" loading="eager" />
         </figure>
       </div>
     </section>
@@ -59,91 +57,67 @@
       <article class="service-detail reveal">
         <div class="service-detail-copy">
           <span class="service-number">01</span>
-          <img class="service-detail-icon" src="./src/img/services/CRM.svg" alt="" width="56" height="56" />
+          <span class="icon-box service-detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="7"/><rect x="14" y="4" width="7" height="7"/><rect x="3" y="13" width="7" height="7"/><rect x="14" y="13" width="7" height="7"/></svg></span>
           <h2>Gestão de CRM</h2>
-          <p>Organize contatos, histórico e oportunidades em um fluxo único. O CRM vira base da operação comercial, não só uma planilha de nomes.</p>
-          <ul>
-            <li>Cadastro e segmentação de leads</li>
-            <li>Acompanhamento de oportunidades</li>
-            <li>Histórico de atendimento</li>
-          </ul>
+          <p>Organize contatos, histórico e oportunidades em um fluxo único.</p>
+          <ul><li>Cadastro e segmentação de leads</li><li>Acompanhamento de oportunidades</li><li>Histórico de atendimento</li></ul>
         </div>
-        <figure class="service-detail-media"><img src="./src/img/services/CRM.png" alt="CRM" width="640" height="420" loading="lazy" /></figure>
+        <figure class="service-detail-media"><img src="./src/img/fundos/10.jpeg" alt="CRM e operação" width="640" height="420" loading="lazy" /></figure>
       </article>
 
       <article class="service-detail reverse reveal">
         <div class="service-detail-copy">
           <span class="service-number">02</span>
-          <img class="service-detail-icon" src="./src/img/services/bot.svg" alt="" width="56" height="56" />
+          <span class="icon-box service-detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16v10H8l-4 3V6z"/></svg></span>
           <h2>Chatbots</h2>
-          <p>Automatize respostas e etapas do atendimento com conversas claras, qualificáveis e integradas ao CRM.</p>
-          <ul>
-            <li>Fluxos de atendimento 24h</li>
-            <li>Qualificação de leads</li>
-            <li>Encaminhamento para o time certo</li>
-          </ul>
+          <p>Automatize respostas e etapas do atendimento com conversas qualificáveis.</p>
+          <ul><li>Fluxos de atendimento</li><li>Qualificação de leads</li><li>Encaminhamento para o time</li></ul>
         </div>
-        <figure class="service-detail-media"><img src="./src/img/services/bot-chat.png" alt="Chatbot" width="640" height="420" loading="lazy" /></figure>
+        <figure class="service-detail-media"><img src="./src/img/fundos/3.jpeg" alt="Atendimento" width="640" height="420" loading="lazy" /></figure>
       </article>
 
       <article class="service-detail reveal">
         <div class="service-detail-copy">
           <span class="service-number">03</span>
-          <img class="service-detail-icon" src="./src/img/services/vendas.svg" alt="" width="56" height="56" />
+          <span class="icon-box service-detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16L14 12v7l-4-2v-5L4 4z"/></svg></span>
           <h2>Funil de vendas</h2>
-          <p>Estruture a jornada do lead com etapas definidas: interesse, relacionamento e decisão de compra.</p>
-          <ul>
-            <li>Mapeamento da jornada</li>
-            <li>Etapas e gatilhos claros</li>
-            <li>Métricas de conversão por estágio</li>
-          </ul>
+          <p>Etapas definidas da jornada: interesse, relacionamento e decisão.</p>
+          <ul><li>Mapeamento da jornada</li><li>Gatilhos claros</li><li>Métricas por estágio</li></ul>
         </div>
-        <figure class="service-detail-media"><img src="./src/img/services/Funil.png" alt="Funil de vendas" width="640" height="420" loading="lazy" /></figure>
+        <figure class="service-detail-media"><img src="./src/img/fundos/12.jpeg" alt="Funil e estratégia" width="640" height="420" loading="lazy" /></figure>
       </article>
 
       <article class="service-detail reverse reveal">
         <div class="service-detail-copy">
           <span class="service-number">04</span>
-          <img class="service-detail-icon" src="./src/img/services/lp.svg" alt="" width="56" height="56" />
+          <span class="icon-box service-detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16"/><path d="M3 8h18"/></svg></span>
           <h2>Landing pages</h2>
-          <p>Páginas de destino focadas em uma oferta e em um próximo passo, para transformar visita em contato qualificado.</p>
-          <ul>
-            <li>Layout orientado a conversão</li>
-            <li>CTAs e formulários objetivos</li>
-            <li>Versões para campanhas específicas</li>
-          </ul>
+          <p>Páginas focadas em uma oferta e em um próximo passo.</p>
+          <ul><li>Layout orientado a conversão</li><li>CTAs objetivos</li><li>Versões por campanha</li></ul>
         </div>
-        <figure class="service-detail-media"><img src="./src/img/4.jpg" alt="Landing page" width="640" height="420" loading="lazy" /></figure>
+        <figure class="service-detail-media"><img src="./src/img/fundos/9.jpeg" alt="Landing page" width="640" height="420" loading="lazy" /></figure>
       </article>
 
       <article class="service-detail reveal">
         <div class="service-detail-copy">
           <span class="service-number">05</span>
-          <img class="service-detail-icon" src="./src/img/services/Mentoria.svg" alt="" width="56" height="56" />
+          <span class="icon-box service-detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20l4.5-1.5L19 8l-3-3L5.5 15.5 4 20z"/><path d="M14 7l3 3"/></svg></span>
           <h2>Mentoria em postagem</h2>
-          <p>Direção prática para criativos e textos com mais clareza, consistência e intenção comercial.</p>
-          <ul>
-            <li>Roteiro de conteúdo</li>
-            <li>Critérios de criativo</li>
-            <li>Alinhamento com campanhas</li>
-          </ul>
+          <p>Direção prática para criativos e textos com intenção comercial.</p>
+          <ul><li>Roteiro de conteúdo</li><li>Critérios de criativo</li><li>Alinhamento com campanhas</li></ul>
         </div>
-        <figure class="service-detail-media"><img src="./src/img/ads.png" alt="Criativos" width="640" height="420" loading="lazy" /></figure>
+        <figure class="service-detail-media"><img src="./src/img/fundos/14.jpeg" alt="Conteúdo" width="640" height="420" loading="lazy" /></figure>
       </article>
 
       <article class="service-detail reverse reveal">
         <div class="service-detail-copy">
           <span class="service-number">06</span>
-          <img class="service-detail-icon" src="./src/img/services/Campanhas.svg" alt="" width="56" height="56" />
+          <span class="icon-box service-detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg></span>
           <h2>Campanhas personalizadas</h2>
-          <p>Segmentação, mídia e acompanhamento de performance com foco em leads e retorno.</p>
-          <ul>
-            <li>Segmentação de público</li>
-            <li>Gestão de anúncios</li>
-            <li>Otimização contínua</li>
-          </ul>
+          <p>Segmentação, mídia e acompanhamento de performance.</p>
+          <ul><li>Segmentação de público</li><li>Gestão de anúncios</li><li>Otimização contínua</li></ul>
         </div>
-        <figure class="service-detail-media"><img src="./src/img/services/funil2.png" alt="Campanhas" width="640" height="420" loading="lazy" /></figure>
+        <figure class="service-detail-media"><img src="./src/img/fundos/18.jpeg" alt="Campanhas" width="640" height="420" loading="lazy" /></figure>
       </article>
     </section>
 
@@ -152,10 +126,10 @@
         <div>
           <p class="eyebrow">Próximo passo</p>
           <h2>Escolha o plano ou fale com a equipe.</h2>
-          <figure class="offer-media"><img src="./src/img/fundos/8.jpeg" alt="" width="900" height="560" loading="lazy" /></figure>
+          <figure class="offer-media"><img src="./src/img/banner1.jpg" alt="" width="900" height="560" loading="lazy" /></figure>
         </div>
         <div class="offer-side">
-          <p>Compare os planos ou abra uma conversa objetiva sobre o momento do seu negócio.</p>
+          <p>Compare os planos ou abra uma conversa objetiva.</p>
           <a class="primary-link dark" href="./precos.html">Ver preços</a>
           <a class="text-link offer-form-link" href="./contato.html">Falar com a LSG</a>
         </div>
@@ -164,7 +138,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-brand"><img class="brand-logo light" src="./src/img/logo-clara.png" alt="" width="36" height="36" /><span class="brand-main">LSG</span><span class="brand-sub">DIGITAL</span></div>
+    <div class="footer-brand"><span class="brand-main">LSG</span><span class="brand-sub">DIGITAL</span></div>
     <div class="footer-copy"><p>Serviços de CRM, automação, landing pages e campanhas.</p><a href="mailto:contato@lsgdigital.com.br">contato@lsgdigital.com.br</a></div>
     <div class="footer-end"><p>LSG Digital</p><a href="./index.html">Voltar ao início</a></div>
   </footer>
