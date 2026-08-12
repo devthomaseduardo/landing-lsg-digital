@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contato LSG Digital: WhatsApp, e-mail e formulário." />
+  <meta name="description" content="Contato LSG Digital." />
   <meta name="theme-color" content="#0b0c0c" />
   <title>Contato | LSG Digital</title>
   <link rel="icon" href="./src/img/favicon.png" />
@@ -12,17 +12,14 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./src/styles/redesign.css" />
   <link rel="stylesheet" href="./src/styles/pages.css" />
+  <link rel="stylesheet" href="./src/styles/icons.css" />
   <link rel="stylesheet" href="./src/styles/motion.css" />
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
   <div class="signal-bar"><a href="https://api.whatsapp.com/send/?phone=5519981331191&text=Olá%2C%20quero%20falar%20com%20a%20LSG.&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">WhatsApp direto com a LSG</a></div>
-
   <header class="site-header" data-header>
-    <a class="brand" href="./index.html" aria-label="LSG Digital, início">
-      <img class="brand-logo" src="./src/img/logo-escura.png" alt="" width="36" height="36" />
-      <span class="brand-main">LSG</span><span class="brand-sub">DIGITAL</span>
-    </a>
+    <a class="brand" href="./index.html" aria-label="LSG Digital, início"><span class="brand-main">LSG</span><span class="brand-sub">DIGITAL</span></a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" data-menu-button>
       <span class="menu-icon" aria-hidden="true"></span><span data-menu-label>Menu</span>
     </button>
@@ -35,7 +32,6 @@
       <a class="nav-cta" href="https://api.whatsapp.com/send/?phone=5519981331191&text=Olá%2C%20quero%20falar%20com%20a%20LSG.&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">Conversar agora</a>
     </nav>
   </header>
-
   <main id="conteudo">
     <section class="page-hero section-pad">
       <div class="section-index">CONTATO</div>
@@ -43,34 +39,26 @@
         <div class="reveal">
           <p class="eyebrow">Fale com a LSG</p>
           <h1>Uma conversa objetiva sobre o seu negócio.</h1>
-          <p class="page-lead">Escolha WhatsApp, e-mail ou o formulário. Respondemos com o próximo passo alinhado ao momento da sua operação.</p>
+          <p class="page-lead">WhatsApp, e-mail ou formulário. Respondemos com o próximo passo.</p>
           <div class="contact-actions">
             <a class="primary-link" href="https://api.whatsapp.com/send/?phone=5519981331191&text=Olá%2C%20quero%20falar%20com%20a%20LSG.&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">Abrir WhatsApp</a>
             <a class="text-link" href="mailto:contato@lsgdigital.com.br">contato@lsgdigital.com.br</a>
           </div>
         </div>
         <figure class="page-hero-media reveal">
-          <img src="./src/img/banner1.jpg" alt="Contato LSG Digital" width="900" height="700" loading="eager" />
+          <img src="./src/img/fundos/18.jpeg" alt="Contato" width="900" height="700" loading="eager" />
         </figure>
       </div>
     </section>
-
     <section class="section-pad contact-panel">
       <div class="contact-grid">
         <form class="contact-form reveal" action="https://api.whatsapp.com/send/" method="get" target="_blank" rel="noreferrer">
           <input type="hidden" name="phone" value="5519981331191" />
           <p class="eyebrow">Mensagem rápida</p>
           <h2>Envie pelo WhatsApp</h2>
-          <label>
-            <span>Nome</span>
-            <input type="text" name="nome" id="nome" required placeholder="Seu nome" autocomplete="name" />
-          </label>
-          <label>
-            <span>Empresa</span>
-            <input type="text" name="empresa" id="empresa" placeholder="Nome da empresa" autocomplete="organization" />
-          </label>
-          <label>
-            <span>O que você precisa</span>
+          <label><span>Nome</span><input type="text" id="nome" required placeholder="Seu nome" autocomplete="name" /></label>
+          <label><span>Empresa</span><input type="text" id="empresa" placeholder="Nome da empresa" autocomplete="organization" /></label>
+          <label><span>O que você precisa</span>
             <select id="assunto" required>
               <option value="">Selecione</option>
               <option value="CRM e automação">CRM e automação</option>
@@ -80,35 +68,28 @@
               <option value="Outro">Outro</option>
             </select>
           </label>
-          <label>
-            <span>Mensagem</span>
-            <textarea id="mensagem" rows="4" placeholder="Conte em poucas linhas o momento do negócio"></textarea>
-          </label>
+          <label><span>Mensagem</span><textarea id="mensagem" rows="4" placeholder="Conte o momento do negócio"></textarea></label>
           <input type="hidden" name="text" id="wa-text" value="" />
           <input type="hidden" name="type" value="phone_number" />
           <input type="hidden" name="app_absent" value="0" />
           <button class="primary-link" type="submit">Enviar no WhatsApp</button>
         </form>
-
         <aside class="contact-aside reveal">
-          <img src="./src/img/fundos/18.jpeg" alt="" width="640" height="480" loading="lazy" />
+          <img src="./src/img/fundos/8.jpeg" alt="" width="640" height="480" loading="lazy" />
           <div class="contact-aside-card">
             <p class="eyebrow">Canais</p>
             <p><strong>WhatsApp</strong><br />(19) 98133-1191</p>
             <p><strong>E-mail</strong><br /><a href="mailto:contato@lsgdigital.com.br">contato@lsgdigital.com.br</a></p>
-            <p><strong>Formulário completo</strong><br /><a class="text-link" href="./src/pages/brinds/form.contato.html">Abrir formulário</a></p>
           </div>
         </aside>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
-    <div class="footer-brand"><img class="brand-logo light" src="./src/img/logo-clara.png" alt="" width="36" height="36" /><span class="brand-main">LSG</span><span class="brand-sub">DIGITAL</span></div>
+    <div class="footer-brand"><span class="brand-main">LSG</span><span class="brand-sub">DIGITAL</span></div>
     <div class="footer-copy"><p>Fale com a LSG Digital.</p><a href="mailto:contato@lsgdigital.com.br">contato@lsgdigital.com.br</a></div>
     <div class="footer-end"><p>LSG Digital</p><a href="./index.html">Voltar ao início</a></div>
   </footer>
-
   <a class="whats-float" href="https://api.whatsapp.com/send/?phone=5519981331191&text=Olá%2C%20quero%20falar%20com%20a%20LSG.&type=phone_number&app_absent=0" target="_blank" rel="noreferrer" aria-label="Abrir WhatsApp">
     <img src="./src/img/wpp-icon.svg" alt="" width="28" height="28" /><span>WhatsApp</span>
   </a>
@@ -119,13 +100,7 @@
       const empresa = document.getElementById('empresa')?.value?.trim() || '';
       const assunto = document.getElementById('assunto')?.value || '';
       const mensagem = document.getElementById('mensagem')?.value?.trim() || '';
-      const text = [
-        'Olá, quero falar com a LSG.',
-        nome ? 'Nome: ' + nome : '',
-        empresa ? 'Empresa: ' + empresa : '',
-        assunto ? 'Assunto: ' + assunto : '',
-        mensagem ? 'Mensagem: ' + mensagem : ''
-      ].filter(Boolean).join('\n');
+      const text = ['Olá, quero falar com a LSG.', nome && ('Nome: ' + nome), empresa && ('Empresa: ' + empresa), assunto && ('Assunto: ' + assunto), mensagem && ('Mensagem: ' + mensagem)].filter(Boolean).join('\n');
       const field = document.getElementById('wa-text');
       if (field) field.value = text;
     });
