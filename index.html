@@ -1,202 +1,211 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <title>Acessoria LSG Digital - Soluções Inovadoras para Presença Digital</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Favicon -->
-  <link rel="icon" href="src/assets/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" href="src/assets/favicon-16x16.png" sizes="16x16">
-  <link rel="apple-touch-icon" href="src/assets/apple-icon-180x180.png">
-  <link rel="icon" href="src/assets/android-icon-192x192.png" sizes="192x192">
-  <meta name="msapplication-TileImage" content="src/assets/ms-icon-144x144.png">
-
-  <!-- Descrição da página (meta description) -->
-  <meta name="description" content="A LSG Digital oferece soluções inovadoras e acessíveis para transformar sua presença digital. Conte com nossa expertise para alavancar o seu negócio online!">
-
-  <!-- Palavras-chave (meta keywords) -->
-  <meta name="keywords" content="acessoria digital, soluções digitais, marketing online, presença digital, consultoria digital, transformação digital, SEO, design web, marketing digital">
-
-  <!-- Autor da página -->
-  <meta name="author" content="LSG Digital">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/@aceternity/ui/dist/style.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="../styles/styles.css" rel="stylesheet">
-  <link href="../styles/tailwind.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet">
-
-
-  <style>
-    /* Estilos customizados aqui (mantidos como estão) */
-
-    .cta {
-      display: flex;
-      padding: 11px 33px;
-      text-decoration: none;
-      font-size: 25px;
-      color: white;
-      background: #2C2C2CFF;
-      transition: 1s;
-      box-shadow: 6px 6px 0 black;
-      transform: skewX(-15deg);
-      border: none;
-      cursor: pointer;
-    }
-
-    .cta:focus {
-      outline: none;
-    }
-
-    .cta:hover {
-      transition: 0.5s;
-      box-shadow: 10px 10px 0 #fa6400;
-    }
-
-    .cta .second {
-      transition: 0.5s;
-      margin-right: 0px;
-    }
-
-    .cta:hover .second {
-      transition: 0.5s;
-      margin-right: 45px;
-    }
-
-    .span {
-      transform: skewX(15deg);
-    }
-
-    .second {
-      width: 20px;
-      margin-left: 30px;
-      position: relative;
-      top: 12%;
-    }
-
-    .one {
-      transition: 0.4s;
-      transform: translateX(-60%);
-    }
-
-    .two {
-      transition: 0.5s;
-      transform: translateX(-30%);
-    }
-
-    .cta:hover .three {
-      animation: color_anim 1s infinite 0.2s;
-    }
-
-    .cta:hover .one {
-      transform: translateX(0%);
-      animation: color_anim 1s infinite 0.6s;
-    }
-
-    .cta:hover .two {
-      transform: translateX(0%);
-      animation: color_anim 1s infinite 0.4s;
-    }
-
-    @keyframes color_anim {
-      0% {
-        fill: white;
-      }
-
-      50% {
-        fill: #fa6400;
-      }
-
-      100% {
-        fill: white;
-      }
-    }
-
-    .text-shadow-glowing {
-      text-shadow: 0 0 1px #ff5722, 0 0 8px #000000FF, 0 0 45px #171717FF;
-    }
-
-    h1 {
-      font-size: 9rem;
-      font-weight: 900;
-      color: transparent;
-      background-clip: text;
-      -webkit-background-clip: text;
-      position: relative;
-      animation: fadeInText 1s ease-out;
-      text-align: center;
-      transition: color 0.3s ease, text-shadow 0.3s ease;
-      color: #ffffff;
-    }
-
-    h1:hover {
-      color: #ffffff;
-    }
-
-    @keyframes fadeInText {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LSG Digital: estratégia, automação, CRM, landing pages e campanhas para transformar presença digital em crescimento." />
+  <meta name="keywords" content="marketing digital, CRM, chatbots, funil de vendas, landing pages, campanhas, automação" />
+  <meta name="author" content="LSG Digital" />
+  <meta name="theme-color" content="#0b0c0c" />
+  <title>LSG Digital | Estratégia, automação e performance</title>
+  <link rel="icon" href="./src/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/styles/redesign.css" />
 </head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-<body class="bg-dark text-white flex justify-center items-center h-screen relative">
+  <div class="signal-bar">
+    <a href="./src/pages/brinds/form.contato.html">CRM + bots para transformar atendimento em oportunidade</a>
+  </div>
 
-  <!-- Vídeo de Fundo Responsivo -->
-  <video class="video-bg absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted poster="./src/img/fallback.jpg">
-    <source src="./src/assets/videos/abertura.mp4" type="video/mp4">
-    Seu navegador não suporta o formato de vídeo.
-    <!-- Fallback: imagem -->
-    <img src="./src/img/fallback.jpg" alt="Fallback Image" />
-  </video>
-  <section class="relative bg-cover bg-center bg-no-repeat">
-    <div class="absolute inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l">
-    </div>
+  <header class="site-header" data-header>
+    <a class="brand" href="#inicio" aria-label="LSG Digital, início">
+      <span class="brand-main">LSG</span>
+      <span class="brand-sub">DIGITAL</span>
+    </a>
 
-    <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-      <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-6 leading-tight text-shadow-lg">
-          Transforme sua presença digital agora mesmo!
-        </h1>
-        <p class="text-xl sm:text-2xl lg:text-3xl text-900 mb-6 max-w-3xl mx-auto leading-relaxed text-center text-shadow-lg">
-          Dê o próximo passo para o sucesso digital.
-          <br />
-          A partir de
-          <span class="text-2xl sm:text-5xl lg:text-7xl font-extrabold text-shadow-glowing animate" style="color: #ff5722;">
-            R$ 599/mês
-          </span>
-          <br />
-          A solução que você precisa está a apenas um clique de distância!
-        </p>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" data-menu-button>Menu</button>
 
-        <div class="mt-8 flex justify-center gap-4 text-center">
-          <!-- Botão Laranja (#ff5722) -->
-          <a href="./src/pages/home.html" class="cta flex items-center justify-center px-6 py-6 rounded-lg bg-orange-600 text-white font-semibold hover:bg-orange-700 transition duration-300">
-            <span class="span text-sm mr-2">Saiba Mais</span>
-            <span class="second">
-              <svg width="30px" height="20px" viewBox="0 0 66 43" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.1908129,21.3505317 56.9937868,21.1584201 L40.1543933,3.89485454 Z"></path>
-                </g>
-              </svg>
-            </span>
-          </a>
+    <nav class="main-nav" id="main-nav" data-nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#clientes">Clientes</a>
+      <a class="nav-cta" href="https://api.whatsapp.com/send/?phone=5519981331191&text=Olá%2C%20quero%20conhecer%20as%20soluções%20da%20LSG%20Digital.&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">Conversar agora</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="kicker">Estratégia digital, automação e performance</p>
+        <h1>Transforme sua presença digital em uma operação que gera resultado.</h1>
+        <p class="hero-intro">A LSG Digital conecta marketing, atendimento e vendas para criar uma jornada mais simples para sua empresa e mais convincente para o seu cliente.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="https://api.whatsapp.com/send/?phone=5519981331191&text=Olá%2C%20quero%20entender%20como%20a%20LSG%20Digital%20pode%20ajudar%20meu%20negócio.&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">Falar sobre meu negócio</a>
+          <a class="text-link" href="#servicos">Conhecer soluções</a>
         </div>
       </div>
-    </div>
-  </section>
-</body>
 
+      <aside class="hero-proof reveal" aria-label="Resumo de resultados">
+        <div class="proof-head">
+          <span>LSG / PERFORMANCE</span>
+          <span>BRASIL</span>
+        </div>
+        <div class="proof-number">700K</div>
+        <p>em vendas geradas para clientes</p>
+        <div class="proof-list">
+          <div><strong>+500</strong><span>empresas atendidas</span></div>
+          <div><strong>50%</strong><span>aumento em conversões</span></div>
+          <div><strong>35%</strong><span>aumento em retenção com CRM e automação</span></div>
+        </div>
+      </aside>
+
+      <div class="hero-foot">
+        <p>A partir de <strong>R$ 599/mês</strong></p>
+        <p>Estratégia pensada para transformar desafios em resultados concretos.</p>
+      </div>
+    </section>
+
+    <section class="statement section-pad" id="sobre">
+      <div class="section-index">01 / SOBRE</div>
+      <div class="statement-copy reveal">
+        <p class="eyebrow">O que move a LSG</p>
+        <h2>Não é sobre aparecer mais. É sobre construir um sistema digital que trabalhe melhor.</h2>
+        <p>Na LSG Digital, trabalhamos para alcançar resultados concretos. Cada solução parte do mesmo princípio: entender a operação, reduzir atrito e conectar aquisição, relacionamento e conversão.</p>
+      </div>
+    </section>
+
+    <section class="services section-pad" id="servicos">
+      <div class="section-index">02 / SERVIÇOS</div>
+      <div class="section-title reveal">
+        <p class="eyebrow">Soluções conectadas</p>
+        <h2>Do primeiro contato até a conversão.</h2>
+      </div>
+
+      <div class="service-list">
+        <article class="service-row reveal">
+          <span class="service-number">01</span>
+          <h3>Gestão de CRM</h3>
+          <p>Organize contatos e transforme leads em clientes fiéis com uma operação de CRM preparada para acompanhar oportunidades e relacionamento.</p>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-number">02</span>
+          <h3>Implementação de Chatbots</h3>
+          <p>Automatize etapas do atendimento com conversas mais naturais, respostas rápidas e processos que não dependem de acompanhamento manual o tempo inteiro.</p>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-number">03</span>
+          <h3>Criação de Funil de Vendas</h3>
+          <p>Estruture a jornada do lead com etapas claras para conduzir interesse, relacionamento e decisão de compra de forma mais eficiente.</p>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-number">04</span>
+          <h3>Criação de Landing Pages</h3>
+          <p>Crie páginas de destino personalizadas e orientadas a conversão para transformar visitas em contatos qualificados.</p>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-number">05</span>
+          <h3>Mentoria em Postagem</h3>
+          <p>Aprenda a desenvolver criativos e textos com mais clareza, intenção e consistência para aumentar o engajamento da sua comunicação.</p>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-number">06</span>
+          <h3>Campanhas Personalizadas</h3>
+          <p>Segmente públicos e campanhas com foco em leads qualificados, acompanhamento de desempenho e melhoria contínua das conversões.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="results section-pad" id="resultados">
+      <div class="section-index light">03 / RESULTADOS</div>
+      <div class="results-heading reveal">
+        <p class="eyebrow light">Números que sustentam a conversa</p>
+        <h2>Resultado não entra no rodapé. Ele conduz a estratégia.</h2>
+      </div>
+      <div class="metric-grid reveal">
+        <div class="metric"><strong>700K</strong><span>em vendas geradas, impulsionando o crescimento e o retorno de clientes.</span></div>
+        <div class="metric"><strong>+500</strong><span>empresas atendidas com estratégias adaptadas a diferentes momentos de negócio.</span></div>
+        <div class="metric"><strong>50%</strong><span>de aumento em conversões em campanhas de marketing digital.</span></div>
+        <div class="metric"><strong>35%</strong><span>de aumento nas taxas de retenção com CRM e automação.</span></div>
+      </div>
+    </section>
+
+    <section class="clients section-pad" id="clientes">
+      <div class="section-index">04 / CLIENTES</div>
+      <div class="clients-head reveal">
+        <p class="eyebrow">Quem já viveu essa experiência</p>
+        <h2>Relacionamentos construídos com resultado e proximidade.</h2>
+      </div>
+
+      <div class="testimonial-list">
+        <figure class="testimonial reveal">
+          <blockquote>“A experiência foi excelente, nossa empresa cresceu muito desde que começamos a trabalhar com eles!”</blockquote>
+          <figcaption>
+            <img src="./src/img/Instagram-clientes/amovacinasoficial.jpg" alt="Amo Vacinas" loading="lazy" />
+            <span><strong>Amo Vacinas</strong><small>@amovacinasoficial</small></span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial reveal">
+          <blockquote>“Simplesmente incrível! Nos ajudaram a aumentar nosso alcance digital em menos de 6 meses.”</blockquote>
+          <figcaption>
+            <img src="./src/img/Instagram-clientes/tominnicelli.jpg" alt="Tom Minnicelli" loading="lazy" />
+            <span><strong>Tom Minnicelli</strong><small>@tominnicelli</small></span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial reveal">
+          <blockquote>“Altamente recomendados! A equipe é muito dedicada e nossos resultados falam por si mesmos.”</blockquote>
+          <figcaption>
+            <img src="./src/img/Instagram-clientes/novo_olhar_revelesuabeleza.jpg" alt="Kely Santana" loading="lazy" />
+            <span><strong>Kely Santana</strong><small>@novo_olhar_revelesuabeleza</small></span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial reveal">
+          <blockquote>“Altamente recomendados! A equipe é muito dedicada e nossos resultados falam por si mesmos.”</blockquote>
+          <figcaption>
+            <img src="./src/img/Instagram-clientes/casavrsalao.jpg" alt="Casa VR" loading="lazy" />
+            <span><strong>Casa VR</strong><small>@casavrsalao</small></span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="offer section-pad" id="contato">
+      <div class="section-index">05 / PRÓXIMO PASSO</div>
+      <div class="offer-layout reveal">
+        <div>
+          <p class="eyebrow">Sua próxima fase digital</p>
+          <h2>Uma conversa objetiva para entender onde sua operação perde oportunidade.</h2>
+        </div>
+        <div class="offer-side">
+          <p class="price-label">Projetos a partir de</p>
+          <p class="price">R$ 599<span>/mês</span></p>
+          <p>Dê o próximo passo para o crescimento digital com uma solução construída para a realidade do seu negócio.</p>
+          <a class="primary-link dark" href="https://api.whatsapp.com/send/?phone=5519981331191&text=Olá%2C%20quero%20conversar%20sobre%20uma%20solução%20digital%20para%20meu%20negócio.&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">Conversar com a LSG</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="brand-main">LSG</span>
+      <span class="brand-sub">DIGITAL</span>
+    </div>
+    <div class="footer-copy">
+      <p>Estratégia digital, CRM, automação, landing pages e campanhas.</p>
+      <a href="mailto:contato@lsgdigital.com.br">contato@lsgdigital.com.br</a>
+    </div>
+    <div class="footer-end">
+      <p>LSG Digital</p>
+      <a href="#inicio">Voltar ao início</a>
+    </div>
+  </footer>
+
+  <script src="./src/script/redesign.js" defer></script>
+</body>
 </html>

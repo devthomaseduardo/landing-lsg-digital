@@ -8,11 +8,9 @@
     "npm": ">=6.0.0"
   },
   "scripts": {
-    "scripts": {
-      "dev": "vite",
-      "build": "vite build",
-      "serve": "vite preview"
-    }
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.9",
