@@ -1,0 +1,92 @@
+/* Ícones geométricos limpos — sem ilustrações Undraw */
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--ink);
+  background: var(--acid);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-box svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--ink);
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+.service-icon .icon-box {
+  width: 48px;
+  height: 48px;
+}
+
+.service-detail-icon.icon-box {
+  width: 56px;
+  height: 56px;
+  margin: .6rem 0 1rem;
+}
+
+.service-detail-icon.icon-box svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* Remove thumbs ruins de ilustração */
+.service-thumb {
+  display: none !important;
+}
+
+.service-row {
+  grid-template-columns: 48px 56px minmax(0, 1fr) !important;
+}
+
+.hero-visual-frame,
+.page-hero-media,
+.statement-media,
+.about-media,
+.offer-media,
+.service-detail-media {
+  background: #111;
+}
+
+.hero-visual-frame img,
+.page-hero-media img,
+.statement-media img,
+.about-media img,
+.offer-media img,
+.service-detail-media img {
+  object-fit: cover;
+  object-position: center;
+  filter: none;
+}
+
+/* Logo única, sem duplicar marca */
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+@media (max-width: 680px) {
+  .service-row {
+    grid-template-columns: 40px 1fr !important;
+  }
+
+  .service-icon {
+    grid-column: 1;
+  }
+
+  .service-body {
+    grid-column: 2;
+  }
+
+  .service-number {
+    display: none;
+  }
+}
