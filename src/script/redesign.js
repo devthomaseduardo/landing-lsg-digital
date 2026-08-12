@@ -1,4 +1,5 @@
 const menuButton = document.querySelector('[data-menu-button]');
+const menuLabel = document.querySelector('[data-menu-label]');
 const nav = document.querySelector('[data-nav]');
 const header = document.querySelector('[data-header]');
 const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -10,16 +11,28 @@ if (menuButton && nav) {
   menuButton.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('is-open');
     menuButton.setAttribute('aria-expanded', String(isOpen));
-    menuButton.textContent = isOpen ? 'Fechar' : 'Menu';
+    if (menuLabel) menuLabel.textContent = isOpen ? 'Fechar' : 'Menu';
+    else menuButton.textContent = isOpen ? 'Fechar' : 'Menu';
   });
 
   nav.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       nav.classList.remove('is-open');
       menuButton.setAttribute('aria-expanded', 'false');
-      menuButton.textContent = 'Menu';
+      if (menuLabel) menuLabel.textContent = 'Menu';
+      else menuButton.textContent = 'Menu';
     });
   });
+}
+
+const logoTrack = document.querySelector('[data-logo-track]');
+if (logoTrack) {
+  const firstSet = logoTrack.querySelector('.logo-set');
+  if (firstSet) {
+    const clone = firstSet.cloneNode(true);
+    clone.setAttribute('aria-hidden', 'true');
+    logoTrack.appendChild(clone);
+  }
 }
 
 const splitHeroTitle = () => {
@@ -58,6 +71,7 @@ const setRevealStagger = (selector, step = 80) => {
 
 setRevealStagger('.service-row.reveal', 70);
 setRevealStagger('.testimonial.reveal', 90);
+setRevealStagger('.faq-item.reveal', 60);
 splitHeroTitle();
 
 const reveals = document.querySelectorAll('.reveal');
@@ -72,8 +86,8 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
       revealObserver.unobserve(entry.target);
     });
   }, {
-    threshold: 0.14,
-    rootMargin: '0px 0px -7% 0px',
+    threshold: 0.12,
+    rootMargin: '0px 0px -6% 0px',
   });
 
   reveals.forEach((element) => revealObserver.observe(element));
@@ -89,8 +103,8 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
       if (entry.isIntersecting) entry.target.classList.add('is-section-visible');
     });
   }, {
-    threshold: 0.18,
-    rootMargin: '0px 0px -12% 0px',
+    threshold: 0.16,
+    rootMargin: '0px 0px -10% 0px',
   });
 
   sections.forEach((section) => sectionObserver.observe(section));
@@ -168,7 +182,7 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
       metricObserver.unobserve(entry.target);
     });
   }, {
-    threshold: 0.45,
+    threshold: 0.4,
   });
 
   metricRows.forEach((metric) => metricObserver.observe(metric));
@@ -176,17 +190,19 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
 
 const enterHero = () => {
   const heroCopy = document.querySelector('.hero-copy');
+  const heroVisual = document.querySelector('.hero-visual');
   const heroProof = document.querySelector('.hero-proof');
   const heroFoot = document.querySelector('.hero-foot');
 
   if (reducedMotion) {
-    [heroCopy, heroProof, heroFoot].forEach((element) => element?.classList.add('is-entered'));
+    [heroCopy, heroVisual, heroProof, heroFoot].forEach((element) => element?.classList.add('is-entered'));
     return;
   }
 
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       heroCopy?.classList.add('is-entered');
+      heroVisual?.classList.add('is-entered');
       heroProof?.classList.add('is-entered');
       heroFoot?.classList.add('is-entered');
 
