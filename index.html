@@ -24,17 +24,22 @@
 
   <header class="site-header" data-header>
     <a class="brand" href="#inicio" aria-label="LSG Digital, início">
+      <img class="brand-logo" src="./src/img/logo-escura.png" alt="" width="36" height="36" />
       <span class="brand-main">LSG</span>
       <span class="brand-sub">DIGITAL</span>
     </a>
 
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" data-menu-button>Menu</button>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" data-menu-button>
+      <span class="menu-icon" aria-hidden="true"></span>
+      <span data-menu-label>Menu</span>
+    </button>
 
     <nav class="main-nav" id="main-nav" data-nav>
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
       <a href="#resultados">Resultados</a>
       <a href="#clientes">Clientes</a>
+      <a href="#faq">FAQ</a>
       <a class="nav-cta" href="https://api.whatsapp.com/send/?phone=5519981331191&text=Olá%2C%20quero%20conhecer%20as%20soluções%20da%20LSG%20Digital.&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">Conversar agora</a>
     </nav>
   </header>
@@ -52,17 +57,22 @@
         </div>
       </div>
 
-      <aside class="hero-proof reveal" aria-label="Resumo de resultados">
-        <div class="proof-head">
-          <span>LSG / PERFORMANCE</span>
-          <span>BRASIL</span>
+      <aside class="hero-visual reveal" aria-label="Visual de performance">
+        <div class="hero-visual-frame">
+          <img src="./src/img/2.jpg" alt="Equipe e operação digital em desempenho" width="720" height="900" loading="eager" decoding="async" />
         </div>
-        <div class="proof-number">700K</div>
-        <p>em vendas geradas para clientes</p>
-        <div class="proof-list">
-          <div><strong>+500</strong><span>empresas atendidas</span></div>
-          <div><strong>50%</strong><span>aumento em conversões</span></div>
-          <div><strong>35%</strong><span>aumento em retenção com CRM e automação</span></div>
+        <div class="hero-proof" aria-label="Resumo de resultados">
+          <div class="proof-head">
+            <span>LSG / PERFORMANCE</span>
+            <span>BRASIL</span>
+          </div>
+          <div class="proof-number" data-counter-value="700K">700K</div>
+          <p>em vendas geradas para clientes</p>
+          <div class="proof-list">
+            <div><strong data-counter-value="+500">+500</strong><span>empresas atendidas</span></div>
+            <div><strong data-counter-value="50%">50%</strong><span>aumento em conversões</span></div>
+            <div><strong data-counter-value="35%">35%</strong><span>aumento em retenção com CRM e automação</span></div>
+          </div>
         </div>
       </aside>
 
@@ -72,12 +82,39 @@
       </div>
     </section>
 
+    <section class="logo-strip" aria-label="Clientes e parceiros">
+      <div class="logo-track" data-logo-track>
+        <div class="logo-set">
+          <img src="./src/img/Instagram-clientes/amovacinasoficial.jpg" alt="Amo Vacinas" width="56" height="56" loading="lazy" />
+          <img src="./src/img/Instagram-clientes/tominnicelli.jpg" alt="Tom Minnicelli" width="56" height="56" loading="lazy" />
+          <img src="./src/img/Instagram-clientes/novo_olhar_revelesuabeleza.jpg" alt="Novo Olhar" width="56" height="56" loading="lazy" />
+          <img src="./src/img/Instagram-clientes/casavrsalao.jpg" alt="Casa VR" width="56" height="56" loading="lazy" />
+          <img src="./src/img/Instagram-clientes/Floya.jpg" alt="Floya" width="56" height="56" loading="lazy" />
+          <img src="./src/img/Instagram-clientes/Tonin.jpg" alt="Tonin" width="56" height="56" loading="lazy" />
+          <img src="./src/img/Instagram-clientes/casalellit.jpg" alt="Casa Lellit" width="56" height="56" loading="lazy" />
+          <img src="./src/img/Instagram-clientes/dconceptbr.jpg" alt="D Concept" width="56" height="56" loading="lazy" />
+          <img src="./src/img/Instagram-clientes/inbeautyluxury.jpg" alt="In Beauty Luxury" width="56" height="56" loading="lazy" />
+          <img src="./src/img/Instagram-clientes/luizgoncalvesconnection.jpg" alt="Luiz Gonçalves" width="56" height="56" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
     <section class="statement section-pad" id="sobre">
       <div class="section-index">01 / SOBRE</div>
-      <div class="statement-copy reveal">
-        <p class="eyebrow">O que move a LSG</p>
-        <h2>Não é sobre aparecer mais. É sobre construir um sistema digital que trabalhe melhor.</h2>
-        <p>Na LSG Digital, trabalhamos para alcançar resultados concretos. Cada solução parte do mesmo princípio: entender a operação, reduzir atrito e conectar aquisição, relacionamento e conversão.</p>
+      <div class="statement-grid">
+        <div class="statement-copy reveal">
+          <p class="eyebrow">O que move a LSG</p>
+          <h2>Não é sobre aparecer mais. É sobre construir um sistema digital que trabalhe melhor.</h2>
+          <p>Na LSG Digital, trabalhamos para alcançar resultados concretos. Cada solução parte do mesmo princípio: entender a operação, reduzir atrito e conectar aquisição, relacionamento e conversão.</p>
+          <ul class="statement-points">
+            <li>Diagnóstico da operação atual</li>
+            <li>Automação de atendimento e CRM</li>
+            <li>Campanhas e páginas orientadas a conversão</li>
+          </ul>
+        </div>
+        <figure class="statement-media reveal">
+          <img src="./src/img/3.jpg" alt="Operação digital e estratégia em prática" width="800" height="1000" loading="lazy" decoding="async" />
+        </figure>
       </div>
     </section>
 
@@ -89,57 +126,185 @@
       </div>
 
       <div class="service-list">
-        <article class="service-row reveal"><span class="service-number">01</span><h3>Gestão de CRM</h3><p>Organize contatos e transforme leads em clientes fiéis com uma operação de CRM preparada para acompanhar oportunidades e relacionamento.</p></article>
-        <article class="service-row reveal"><span class="service-number">02</span><h3>Implementação de Chatbots</h3><p>Automatize etapas do atendimento com conversas mais naturais, respostas rápidas e processos que não dependem de acompanhamento manual o tempo inteiro.</p></article>
-        <article class="service-row reveal"><span class="service-number">03</span><h3>Criação de Funil de Vendas</h3><p>Estruture a jornada do lead com etapas claras para conduzir interesse, relacionamento e decisão de compra de forma mais eficiente.</p></article>
-        <article class="service-row reveal"><span class="service-number">04</span><h3>Criação de Landing Pages</h3><p>Crie páginas de destino personalizadas e orientadas a conversão para transformar visitas em contatos qualificados.</p></article>
-        <article class="service-row reveal"><span class="service-number">05</span><h3>Mentoria em Postagem</h3><p>Aprenda a desenvolver criativos e textos com mais clareza, intenção e consistência para aumentar o engajamento da sua comunicação.</p></article>
-        <article class="service-row reveal"><span class="service-number">06</span><h3>Campanhas Personalizadas</h3><p>Segmente públicos e campanhas com foco em leads qualificados, acompanhamento de desempenho e melhoria contínua das conversões.</p></article>
+        <article class="service-row reveal">
+          <span class="service-number">01</span>
+          <div class="service-icon"><img src="./src/img/services/CRM.svg" alt="" width="48" height="48" loading="lazy" /></div>
+          <div class="service-body">
+            <h3>Gestão de CRM</h3>
+            <p>Organize contatos e transforme leads em clientes fiéis com uma operação de CRM preparada para acompanhar oportunidades e relacionamento.</p>
+          </div>
+          <div class="service-thumb"><img src="./src/img/services/CRM.png" alt="Ilustração de CRM" width="280" height="180" loading="lazy" /></div>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-number">02</span>
+          <div class="service-icon"><img src="./src/img/services/bot.svg" alt="" width="48" height="48" loading="lazy" /></div>
+          <div class="service-body">
+            <h3>Implementação de Chatbots</h3>
+            <p>Automatize etapas do atendimento com conversas mais naturais, respostas rápidas e processos que não dependem de acompanhamento manual o tempo inteiro.</p>
+          </div>
+          <div class="service-thumb"><img src="./src/img/services/bot-chat.png" alt="Ilustração de chatbot" width="280" height="180" loading="lazy" /></div>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-number">03</span>
+          <div class="service-icon"><img src="./src/img/services/vendas.svg" alt="" width="48" height="48" loading="lazy" /></div>
+          <div class="service-body">
+            <h3>Criação de Funil de Vendas</h3>
+            <p>Estruture a jornada do lead com etapas claras para conduzir interesse, relacionamento e decisão de compra de forma mais eficiente.</p>
+          </div>
+          <div class="service-thumb"><img src="./src/img/services/Funil.png" alt="Ilustração de funil de vendas" width="280" height="180" loading="lazy" /></div>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-number">04</span>
+          <div class="service-icon"><img src="./src/img/services/lp.svg" alt="" width="48" height="48" loading="lazy" /></div>
+          <div class="service-body">
+            <h3>Criação de Landing Pages</h3>
+            <p>Crie páginas de destino personalizadas e orientadas a conversão para transformar visitas em contatos qualificados.</p>
+          </div>
+          <div class="service-thumb"><img src="./src/img/4.jpg" alt="Exemplo de landing page" width="280" height="180" loading="lazy" /></div>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-number">05</span>
+          <div class="service-icon"><img src="./src/img/services/Mentoria.svg" alt="" width="48" height="48" loading="lazy" /></div>
+          <div class="service-body">
+            <h3>Mentoria em Postagem</h3>
+            <p>Aprenda a desenvolver criativos e textos com mais clareza, intenção e consistência para aumentar o engajamento da sua comunicação.</p>
+          </div>
+          <div class="service-thumb"><img src="./src/img/ads.png" alt="Criativos e anúncios" width="280" height="180" loading="lazy" /></div>
+        </article>
+        <article class="service-row reveal">
+          <span class="service-number">06</span>
+          <div class="service-icon"><img src="./src/img/services/Campanhas.svg" alt="" width="48" height="48" loading="lazy" /></div>
+          <div class="service-body">
+            <h3>Campanhas Personalizadas</h3>
+            <p>Segmente públicos e campanhas com foco em leads qualificados, acompanhamento de desempenho e melhoria contínua das conversões.</p>
+          </div>
+          <div class="service-thumb"><img src="./src/img/services/funil2.png" alt="Campanhas e performance" width="280" height="180" loading="lazy" /></div>
+        </article>
       </div>
     </section>
 
     <section class="results section-pad" id="resultados">
       <div class="section-index light">03 / RESULTADOS</div>
-      <div class="results-heading reveal"><p class="eyebrow light">Números que sustentam a conversa</p><h2>Resultado não entra no rodapé. Ele conduz a estratégia.</h2></div>
+      <div class="results-heading reveal">
+        <p class="eyebrow light">Números que sustentam a conversa</p>
+        <h2>Resultado não entra no rodapé. Ele conduz a estratégia.</h2>
+      </div>
       <div class="metric-grid reveal">
-        <div class="metric"><strong>700K</strong><span>em vendas geradas, impulsionando o crescimento e o retorno de clientes.</span></div>
-        <div class="metric"><strong>+500</strong><span>empresas atendidas com estratégias adaptadas a diferentes momentos de negócio.</span></div>
-        <div class="metric"><strong>50%</strong><span>de aumento em conversões em campanhas de marketing digital.</span></div>
-        <div class="metric"><strong>35%</strong><span>de aumento nas taxas de retenção com CRM e automação.</span></div>
+        <div class="metric"><strong data-counter-value="700K">700K</strong><span>em vendas geradas, impulsionando o crescimento e o retorno de clientes.</span></div>
+        <div class="metric"><strong data-counter-value="+500">+500</strong><span>empresas atendidas com estratégias adaptadas a diferentes momentos de negócio.</span></div>
+        <div class="metric"><strong data-counter-value="50%">50%</strong><span>de aumento em conversões em campanhas de marketing digital.</span></div>
+        <div class="metric"><strong data-counter-value="35%">35%</strong><span>de aumento nas taxas de retenção com CRM e automação.</span></div>
       </div>
     </section>
 
     <section class="clients section-pad" id="clientes">
       <div class="section-index">04 / CLIENTES</div>
-      <div class="clients-head reveal"><p class="eyebrow">Quem já viveu essa experiência</p><h2>Relacionamentos construídos com resultado e proximidade.</h2></div>
+      <div class="clients-head reveal">
+        <p class="eyebrow">Quem já viveu essa experiência</p>
+        <h2>Relacionamentos construídos com resultado e proximidade.</h2>
+      </div>
 
       <div class="testimonial-list">
-        <figure class="testimonial reveal"><blockquote>“A experiência foi excelente, nossa empresa cresceu muito desde que começamos a trabalhar com eles!”</blockquote><figcaption><img src="./src/img/Instagram-clientes/amovacinasoficial.jpg" alt="Amo Vacinas" loading="lazy" /><span><strong>Amo Vacinas</strong><small>@amovacinasoficial</small></span></figcaption></figure>
-        <figure class="testimonial reveal"><blockquote>“Simplesmente incrível! Nos ajudaram a aumentar nosso alcance digital em menos de 6 meses.”</blockquote><figcaption><img src="./src/img/Instagram-clientes/tominnicelli.jpg" alt="Tom Minnicelli" loading="lazy" /><span><strong>Tom Minnicelli</strong><small>@tominnicelli</small></span></figcaption></figure>
-        <figure class="testimonial reveal"><blockquote>“Altamente recomendados! A equipe é muito dedicada e nossos resultados falam por si mesmos.”</blockquote><figcaption><img src="./src/img/Instagram-clientes/novo_olhar_revelesuabeleza.jpg" alt="Kely Santana" loading="lazy" /><span><strong>Kely Santana</strong><small>@novo_olhar_revelesuabeleza</small></span></figcaption></figure>
-        <figure class="testimonial reveal"><blockquote>“Altamente recomendados! A equipe é muito dedicada e nossos resultados falam por si mesmos.”</blockquote><figcaption><img src="./src/img/Instagram-clientes/casavrsalao.jpg" alt="Casa VR" loading="lazy" /><span><strong>Casa VR</strong><small>@casavrsalao</small></span></figcaption></figure>
+        <figure class="testimonial reveal">
+          <blockquote>“A experiência foi excelente, nossa empresa cresceu muito desde que começamos a trabalhar com eles!”</blockquote>
+          <figcaption>
+            <img src="./src/img/Instagram-clientes/amovacinasoficial.jpg" alt="Amo Vacinas" loading="lazy" width="52" height="52" />
+            <span><strong>Amo Vacinas</strong><small>@amovacinasoficial</small></span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial reveal">
+          <blockquote>“Simplesmente incrível! Nos ajudaram a aumentar nosso alcance digital em menos de 6 meses.”</blockquote>
+          <figcaption>
+            <img src="./src/img/Instagram-clientes/tominnicelli.jpg" alt="Tom Minnicelli" loading="lazy" width="52" height="52" />
+            <span><strong>Tom Minnicelli</strong><small>@tominnicelli</small></span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial reveal">
+          <blockquote>“Altamente recomendados! A equipe é muito dedicada e nossos resultados falam por si mesmos.”</blockquote>
+          <figcaption>
+            <img src="./src/img/Instagram-clientes/novo_olhar_revelesuabeleza.jpg" alt="Kely Santana" loading="lazy" width="52" height="52" />
+            <span><strong>Kely Santana</strong><small>@novo_olhar_revelesuabeleza</small></span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial reveal">
+          <blockquote>“Altamente recomendados! A equipe é muito dedicada e nossos resultados falam por si mesmos.”</blockquote>
+          <figcaption>
+            <img src="./src/img/Instagram-clientes/casavrsalao.jpg" alt="Casa VR" loading="lazy" width="52" height="52" />
+            <span><strong>Casa VR</strong><small>@casavrsalao</small></span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="faq section-pad" id="faq">
+      <div class="section-index">05 / FAQ</div>
+      <div class="faq-layout">
+        <div class="faq-intro reveal">
+          <p class="eyebrow">Perguntas frequentes</p>
+          <h2>Respostas diretas antes da conversa.</h2>
+        </div>
+        <div class="faq-list" data-faq>
+          <details class="faq-item reveal" open>
+            <summary>Para quem é a LSG Digital?</summary>
+            <p>Para empresas que querem organizar aquisição, atendimento e conversão em um fluxo digital mais claro, com CRM, automação e campanhas conectadas.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Como funciona o início do trabalho?</summary>
+            <p>Começamos com uma conversa para entender o momento do negócio, mapear gargalos e indicar a combinação de soluções mais adequada.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Qual o investimento inicial?</summary>
+            <p>Projetos a partir de R$ 599/mês, conforme o escopo de CRM, bots, landing pages e campanhas.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Vocês atendem só Campinas?</summary>
+            <p>O atendimento é digital e pode ser feito à distância. A operação atende empresas em diferentes regiões do Brasil.</p>
+          </details>
+        </div>
       </div>
     </section>
 
     <section class="offer section-pad" id="contato">
-      <div class="section-index">05 / PRÓXIMO PASSO</div>
+      <div class="section-index">06 / PRÓXIMO PASSO</div>
       <div class="offer-layout reveal">
-        <div><p class="eyebrow">Sua próxima fase digital</p><h2>Uma conversa objetiva para entender onde sua operação perde oportunidade.</h2></div>
+        <div>
+          <p class="eyebrow">Sua próxima fase digital</p>
+          <h2>Uma conversa objetiva para entender onde sua operação perde oportunidade.</h2>
+          <figure class="offer-media">
+            <img src="./src/img/banner1.jpg" alt="Equipe LSG Digital" width="960" height="540" loading="lazy" decoding="async" />
+          </figure>
+        </div>
         <div class="offer-side">
           <p class="price-label">Projetos a partir de</p>
           <p class="price">R$ 599<span>/mês</span></p>
           <p>Dê o próximo passo para o crescimento digital com uma solução construída para a realidade do seu negócio.</p>
           <a class="primary-link dark" href="https://api.whatsapp.com/send/?phone=5519981331191&text=Olá%2C%20quero%20conversar%20sobre%20uma%20solução%20digital%20para%20meu%20negócio.&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">Conversar com a LSG</a>
+          <a class="text-link offer-form-link" href="./src/pages/brinds/form.contato.html">Ou preencher formulário de contato</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-brand"><span class="brand-main">LSG</span><span class="brand-sub">DIGITAL</span></div>
-    <div class="footer-copy"><p>Estratégia digital, CRM, automação, landing pages e campanhas.</p><a href="mailto:contato@lsgdigital.com.br">contato@lsgdigital.com.br</a></div>
-    <div class="footer-end"><p>LSG Digital</p><a href="#inicio">Voltar ao início</a></div>
+    <div class="footer-brand">
+      <img class="brand-logo light" src="./src/img/logo-clara.png" alt="" width="36" height="36" />
+      <span class="brand-main">LSG</span>
+      <span class="brand-sub">DIGITAL</span>
+    </div>
+    <div class="footer-copy">
+      <p>Estratégia digital, CRM, automação, landing pages e campanhas.</p>
+      <a href="mailto:contato@lsgdigital.com.br">contato@lsgdigital.com.br</a>
+    </div>
+    <div class="footer-end">
+      <p>LSG Digital</p>
+      <a href="#inicio">Voltar ao início</a>
+    </div>
   </footer>
+
+  <a class="whats-float" href="https://api.whatsapp.com/send/?phone=5519981331191&text=Olá%2C%20quero%20conhecer%20as%20soluções%20da%20LSG%20Digital.&type=phone_number&app_absent=0" target="_blank" rel="noreferrer" aria-label="Abrir WhatsApp">
+    <img src="./src/img/wpp-icon.svg" alt="" width="28" height="28" />
+    <span>WhatsApp</span>
+  </a>
 
   <script src="./src/script/redesign.js" defer></script>
 </body>
